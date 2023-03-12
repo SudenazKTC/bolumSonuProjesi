@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SDK</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fontawesome-free-6.3.0-web/css/all.min.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+</head>
+<body>
+    <!-- header start -->
+    <header class="header">
+        <a href="#" class="logo">
+            <img src="img/logo.png" alt="logo">
+        </a>
+
+        <nav class="navbar active">
+            <a href="#home" class="active">Ana Sayfa</a>
+            <a href="#about">Hakkımızda</a>
+            <a href="#urun">Kitaplar</a>
+            <a href="#fırsat">Fırsatlar</a>
+            <a href="#iletisim">İletişim</a>
+        </nav>
+
+        <div class="buttons">
+            <button onclick="degis()">
+                <i class="fas fa-search"> </i>
+            </button>
+            <button>
+                <i class="fas fa-shopping-cart"> </i>
+            </button>
+            <button id="menu-btn" onclick="visible()">
+                <i class="fas fa-bars"> </i>
+            </button>
+        </div>
+
+        <div class="search-form active" id="swifty">
+            <input type="text" class="search-input" id="search-box" placeholder="Burada Ara">
+            <i class="fas fa-search"></i>
+        </div>
+    </header>
+    
+    <nav id="navbar2">
+        <a href="#home">Ana Sayfa</a>
+        <a href="#about">Hakkımızda</a>
+        <a href="#urun">Kitaplar</a>
+        <a href="#fırsat">Fırsatlar</a>
+        <a href="#iletisim">İletişim</a>
+    </nav>
+    <!-- header end -->
+
+    <!-- home section start -->
+    <div class="content" id="home">
+        <section class="home">  
+            <h3 class="baslik"> KİTAP OKUMAYAN KALMASIN </h3>
+
+            <p class="paragraf"> Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Illo nostrum ducimus ullam, veniam magnam nulla assumenda 
+                molestias optio iure natus? Delectus, officia assumenda.
+            </p>
+
+            <a href="#" id="btn1"> Hemen Kitap Al </a>
+        </section>
+    </div>
+    <!-- home section end -->
+
+    <!-- products start -->
+    <section class="products" id="urun">
+        <div class="box-container" id="container">
+            <div class="box">
+                <div class="box-head">
+                    <img src="img/Bilinmeyen Bir Kadının Mektubu.png">
+                    <span class="products-category">Stefan Zweig</span>
+                    <br>
+                    <h3>Bilinmeyen Bir Kadının Mektubu</h3>
+                    <div class="price">33.02₺</div>
+                </div>
+                <div class="box-bottom">
+                    <a href="#" class="btn">Sepete Ekle</a>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <div class="box-head">
+                    <img src="img/Ateşböceği Yolu.png">
+                    <span class="products-category">Kristin Hannah</span>
+                    <h3> Ateşböceği Yolu</h3>
+                    <div class="price">98.90₺</div>
+                </div>
+                <div class="box-bottom">
+                    <a href="#" class="btn">Sepete Ekle</a>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <div class="box-head">
+                    <img src="img/Bir Kadının Yaşamından 24 Saat.png">
+                    <span class="products-category">Stefan Zweig</span>
+                    <h3> Bir Kadının Yaşamından 24 Saat </h3>
+                    <div class="price">21.42₺</div>
+                </div>
+                <div class="box-bottom">
+                    <a href="#" class="btn">Sepete Ekle</a>
+                </div>
+            </div>
+
+
+            <div class="box" id="yk">
+                <div class="box-head">
+                    <img src="img/Dava.png">
+                    <span class="products-category">Franz Kafka</span>
+                    <h3> Dava </h3>
+                    <div class="price">18.68₺</div>
+                </div> 
+                <div class="box-bottom">
+                    <a href="#" class="btn">Sepete Ekle</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="box-container" id="container">
+            <div class="box">
+                <div class="box-head">
+                    <img src="img/Dönüşüm.png">
+                    <span class="products-category">Frans Kafka</span>
+                    <h3> Dönüşüm </h3>
+                    <div class="price">10.99₺</div>
+                </div>
+                <div class="box-bottom">
+                    <a href="#" class="btn">Sepete Ekle</a>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <div class="box-head">
+                    <img src="img/Elveda Haziran.png">
+                    <span class="products-category">Sarah Jio</span>
+                    <h3> Elveda Hairan</h3>
+                    <div class="price">149.90₺</div>
+                </div>
+                <div class="box-bottom">
+                    <a href="#" class="btn">Sepete Ekle</a>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <div class="box-head">
+                    <img src="img/İntibah.png">
+                    <span class="products-category">Namık Kemal</span>
+                    <h3> İntibah </h3>
+                    <div class="price">38.31₺</div>
+                </div>
+                <div class="box-bottom">
+                    <a href="#" class="btn">Sepete Ekle</a>
+                </div>
+            </div>
+
+
+            <div class="box" id="yk">
+                <div class="box-head">
+                    <img src="img/Karantina Set.png">
+                    <span class="products-category">Beyza Alkoç</span>
+                    <h3> Karantina Serisi Set(4 Kitap) </h3>
+                    <div class="price">399.90₺</div>
+                </div> 
+                <div class="box-bottom">
+                    <a href="#" class="btn">Sepete Ekle</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="box-container" id="container">
+            <div class="box">
+                <div class="box-head">
+                    <img src="img/Satranç.png">
+                    <span class="products-category">Stefan Zweig</span>
+                    <h3> Satranç </h3>
+                    <div class="price">10.99₺</div>
+                </div>
+                <div class="box-bottom">
+                    <a href="#" class="btn">Sepete Ekle</a>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <div class="box-head">
+                    <img src="img/Sefiller.png">
+                    <span class="products-category">Victor Hugo</span>
+                    <h3> Sefiller</h3>
+                    <div class="price">990.90₺</div>
+                </div>
+                <div class="box-bottom">
+                    <a href="#" class="btn">Sepete Ekle</a>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <div class="box-head">
+                    <img src="img/Sherlock Holmes Tüm Eserler.png">
+                    <span class="products-category">Sir Arthur Conan Doyle</span>
+                    <h3> Sherlock Holmes Tüm Eserler </h3>
+                    <div class="price">159.00₺</div>
+                </div>
+                <div class="box-bottom">
+                    <a href="#" class="btn">Sepete Ekle</a>
+                </div>
+            </div>
+
+
+            <div class="box" id="yk">
+                <div class="box-head">
+                    <img src="img/Yaşar Ne Yaşar Ne Yaşamaz.png">
+                    <span class="products-category">Aziz Nesin</span>
+                    <h3> Yaşar Ne Yaşar Ne Yaşamaz </h3>
+                    <div class="price">79.49₺</div>
+                </div> 
+                <div class="box-bottom">
+                    <a href="#" class="btn">Sepete Ekle</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="box-container" id="container">
+            <div class="box">
+                <div class="box-head">
+                    <img src="img/Babaya Mektup.png">
+                    <span class="products-category">Franz Kafka</span>
+                    <h3> Babaya Mektup </h3>
+                    <div class="price">10.99₺</div>
+                </div>
+                <div class="box-bottom">
+                    <a href="#" class="btn">Sepete Ekle</a>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <div class="box-head">
+                    <img src="img/Yalan Makinesi.png">
+                    <span class="products-category"> James Halperin</span>
+                    <h3> Yalan Makinesi</h3>
+                    <div class="price">283.35₺</div>
+                </div>
+                <div class="box-bottom">
+                    <a href="#" class="btn">Sepete Ekle</a>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <div class="box-head">
+                    <img src="img/Nutuk.png">
+                    <span class="products-category">Mustafa Kemal Atatürk</span>
+                    <h3> Nutuk(Ciltli) </h3>
+                    <div class="price">230.00₺</div>
+                </div>
+                <div class="box-bottom">
+                    <a href="#" class="btn">Sepete Ekle</a>
+                </div>
+            </div>
+
+
+            <div class="box" id="yk">
+                <div class="box-head">
+                    <img src="img/Güneşi Söndürmem Gerek.png">
+                    <span class="products-category">Emre Gül</span>
+                    <h3> Güneşi Söndürmem Gerek Set(Ciltli-3 Kitap) </h3>
+                    <div class="price">208.00₺</div>
+                </div> 
+                <div class="box-bottom">
+                    <a href="#" class="btn">Sepete Ekle</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="box-container" id="container">
+            <div class="box">
+                <div class="box-head">
+                    <img src="img/Doctor Who.png">
+                    <span class="products-category">Neil Gaiman & Eoin Colfer </span>
+                    <h3> Doctor Who:11 Doktor 11 Öykü </h3>
+                    <div class="price">448.00₺</div>
+                </div>
+                <div class="box-bottom">
+                    <a href="#" class="btn">Sepete Ekle</a>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <div class="box-head">
+                    <img src="img/Anna Karenina.png">
+                    <span class="products-category">Lev Nikolayeviç Tolstoy</span>
+                    <h3> Anna Karenina </h3>
+                    <div class="price">54.95₺</div>
+                </div>
+                <div class="box-bottom">
+                    <a href="#" class="btn">Sepete Ekle</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="box-head">
+                    <img src="img/Saklambaç.png">
+                    <span class="products-category">N.G. Kabal</span>
+                    <h3>Saklambaç</h3>
+                    <div class="price">94.41₺</div>
+                </div>
+                <div class="box-bottom">
+                    <a href="#" class="btn">Sepete Ekle</a>
+                </div>
+            </div>
+
+
+            <div class="box" id="yk">
+                <div class="box-head">
+                    <img src="img/Gurur Ve Ön Yargı.png">
+                    <span class="products-category">Jane Austen</span>
+                    <h3> Gurur Ve Ön Yargı </h3>
+                    <div class="price">32.87₺</div>
+                </div> 
+                <div class="box-bottom">
+                    <a href="#" class="btn">Sepete Ekle</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="box-container" id="container">
+            <div class="box">
+                <div class="box-head">
+                    <img src="img/Bir İdam Mahkumunun Son Günü.png">
+                    <span class="products-category">Victor Hugo</span>
+                    <h3>Bir İdam Mahkumunun Son Günü</h3>
+                    <div class="price">13.19₺</div>
+                </div>
+                <div class="box-bottom">
+                    <a href="#" class="btn">Sepete Ekle</a>
+                </div>
+            </div>
+
+            <div class="box">
+                <div class="box-head">
+                    <img src="img/Hayvan  Çiftliği.png">
+                    <span class="products-category">George Orwell</span>
+                    <h3>Hayvan Çiftliği</h3>
+                    <div class="price">15.98₺</div>
+                </div>
+                <div class="box-bottom">
+                    <a href="#" class="btn">Sepete Ekle</a>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <div class="box-head">
+                    <img src="img/İki Şehrin Hikayesi.png">
+                    <span class="products-category">Charles Dickens</span>
+                    <h3> İki Şehrin Hikayesi </h3>
+                    <div class="price">35.16₺</div>
+                </div>
+                <div class="box-bottom">
+                    <a href="#" class="btn">Sepete Ekle</a>
+                </div>
+            </div>
+
+
+            <div class="box" id="yk">
+                <div class="box-head">
+                    <img src="img/Martin Eden.png">
+                    <span class="products-category">Jack London</span>
+                    <h3> Martin Eden </h3>
+                    <div class="price">35.16₺</div>
+                </div> 
+                <div class="box-bottom">
+                    <a href="#" class="btn">Sepete Ekle</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="box-container" id="container">
+            <div class="box">
+                <div class="box-head">
+                    <img src="img/Veronika Ölmek İstiyor.png">
+                    <span class="products-category">Paulo Coelho</span>
+                    <h3> Veronika Ölmek İstiyor </h3>
+                    <div class="price">39.96₺</div>
+                </div>
+                <div class="box-bottom">
+                    <a href="#" class="btn">Sepete Ekle</a>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <div class="box-head">
+                    <img src="img/Yeraltından Notlar.png">
+                    <span class="products-category">Fyodor Mihayloviç Dostoyevski</span>
+                    <h3>Yeraltından Notlar</h3>
+                    <div class="price">15.38₺</div>
+                </div>
+                <div class="box-bottom">
+                    <a href="#" class="btn">Sepete Ekle</a>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <div class="box-head">
+                    <img src="img/Zaman Makinesi.png">
+                    <span class="products-category">H. G. Wells</span>
+                    <h3> Zaman Makinesi </h3>
+                    <div class="price">12.09₺</div>
+                </div>
+                <div class="box-bottom">
+                    <a href="#" class="btn">Sepete Ekle</a>
+                </div>
+            </div>
+
+
+            <div class="box" id="yk">
+                <div class="box-head">
+                    <img src="img/Şeker Portakalı.png">
+                    <span class="products-category">Jose Mauro De Vasconcelos</span>
+                    <h3> Şeker Portakalı </h3>
+                    <div class="price">30.36₺</div>
+                </div> 
+                <div class="box-bottom">
+                    <a href="#" class="btn">Sepete Ekle</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="box-container">
+            <div class="box">
+                <div class="box-head">
+                    <img src="img/Kimse Gerçek Değil.png">
+                    <span class="products-category">Zeynep Sey</span>
+                    <h3> Kimse Gerçek Değil Kutulu(Ciltli-İmzalı) </h3>
+                    <div class="price">143.45₺</div>
+                </div>
+                <div class="box-bottom">
+                    <a href="#" class="btn">Sepete Ekle</a>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <div class="box-head">
+                    <img src="img/Böyle Söyledi Zerduşt.png">
+                    <span class="products-category">Friedrich Wilhelm Nietzsche</span>
+                    <h3> Böyle Söyledi Zerduşt </h3>
+                    <div class="price">24.18₺</div>
+                </div>
+                <div class="box-bottom">
+                    <a href="#" class="btn">Sepete Ekle</a>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <div class="box-head">
+                    <img src="img/1984.png">
+                    <span class="products-category">George Orwell</span>
+                    <h3> 1984 </h3>
+                    <div class="price">30.21₺</div>
+                </div>
+                <div class="box-bottom">
+                    <a href="#" class="btn">Sepete Ekle</a>
+                </div>
+            </div>
+
+
+            <div class="box" id="yk">
+                <div class="box-head">
+                    <img src="img/Deli.png">
+                    <span class="products-category">Gülsen Kılıçaslan</span>
+                    <h3> Deli </h3>
+                    <div class="price">92.41₺</div>
+                </div> 
+                <div class="box-bottom">
+                    <a href="#" class="btn">Sepete Ekle</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- products end -->
+    
+    <!-- opportunities section start -->
+    <section class="products" id="fırsat">
+        <div class="box-container" id="container">
+            <div class="box">
+                <div class="box-head">
+                    <img src="img/Altıncı Koğuş.png">
+                    <span class="opportunities-category">Anton Pavloviç Çehov</span>
+                    <h3> Altıncı Koğuş </h3>
+                    <div class="price">12.09₺<span> 24.99₺</span></div>
+                </div>
+                <div class="box-bottom">
+                    <a href="#" class="btn">Sepete Ekle</a>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <div class="box-head">
+                    <img src="img/Beyaz Geceler.png">
+                    <span class="opportunities-category">Fyodor Mihayloviç Dostoyevski</span>
+                    <h3> Beyaz Geceler </h3>
+                    <div class="price">16.48₺<span> 49.99₺</span></div>
+                </div>
+                <div class="box-bottom">
+                    <a href="#" class="btn">Sepete Ekle</a>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <div class="box-head">
+                    <img src="img/Fahrenheit 451.png">
+                    <span class="opportunities-category">Ray Bradbury</span>
+                    <h3> Fahrenheit 451 </h3>
+                    <div class="price">35.11₺<span> 66.04₺</span></div>
+                </div>
+                <div class="box-bottom">
+                    <a href="#" class="btn">Sepete Ekle</a>
+                </div>
+            </div>
+
+
+            <div class="box" id="yk">
+                <div class="box-head">
+                    <img src="img/Kumarbaz.png">
+                    <span class="opportunities-category">Fyodor Mihayloviç Dostoyevski</span>
+                    <h3> Kumarbaz:Genç Bir Adamın Notlarından </h3>
+                    <div class="price">16.48₺<span> 34.24₺</span></div>
+                </div> 
+                <div class="box-bottom">
+                    <a href="#" class="btn">Sepete Ekle</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="box-container">
+            <div class="box">
+                <div class="box-head">
+                    <img src="img/Olağanüstü Bir Gece.png">
+                    <span class="opportunities-category">Stefan Zweig</span>
+                    <h3> Olağanüstü Bir Gece </h3>
+                    <div class="price">10.99₺<span> 17.43₺</span></div>
+                </div>
+                <div class="box-bottom">
+                    <a href="#" class="btn">Sepete Ekle</a>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <div class="box-head">
+                    <img src="img/On Kişiydiler.png">
+                    <span class="opportunities-category">Agatha Christie</span>
+                    <h3>On Kişiydiler - On Küçük Zenci</h3>
+                    <div class="price">39.10₺<span> 54.12₺</span></div>
+                </div>
+                <div class="box-bottom">
+                    <a href="#" class="btn">Sepete Ekle</a>
+                </div>
+            </div>
+
+
+            <div class="box">
+                <div class="box-head">
+                    <img src="img/Savaş Sanatı.png">
+                    <span class="opportunities-category">Sun Zi</span>
+                    <h3> Savaş Sanatı </h3>
+                    <div class="price">9.89₺<span> 15.44₺</span></div>
+                </div>
+                <div class="box-bottom">
+                    <a href="#" class="btn">Sepete Ekle</a>
+                </div>
+            </div>
+
+
+            <div class="box" id="yk">
+                <div class="box-head">
+                    <img src="img/Simyacı.png">
+                    <span class="opportunities-category">Paulo Coelho</span>
+                    <h3> Simyacı </h3>
+                    <div class="price">38.469₺<span> 75.12₺</span></div>
+                </div> 
+                <div class="box-bottom">
+                    <a href="#" class="btn">Sepete Ekle</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- opportunities section end -->
+
+    <!-- about start -->
+    <section class="about" id="about">
+        <div class="row">
+            <div class="image">
+                <img src="img/about.png">
+            </div>
+            <div class="content">
+                <h3> Neden Kitap Satıyoruz? </h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod sit aspernatur aut cupiditate ratione quos tempore est, quaerat reprehenderit commodi officia nobis eum tempora, at quisquam saepe distinctio perferendis quam! </p>
+                <p>Nam expedita eveniet illo omnis, magni voluptas voluptates praesentium! Nihil, corrupti. Recusandae itaque tempora inventore tenetur doloremque amet. Quaerat minus magnam rerum alias cumque minima dolore exercitationem id labore necessitatibus? </p>
+                <p>Facere iste distinctio fugiat molestiae dolor explicabo autem, eos animi, quis eligendi architecto minus alias neque! Praesentium rem iste neque inventore assumenda recusandae excepturi officiis, accusamus sapiente laudantium ab rerum? </p>
+                <p>Alias omnis similique placeat voluptatem excepturi nisi nemo optio, qui, deleniti, a est nulla eligendi fugiat quaerat quis! Provident, laboriosam deserunt? Magni sequi veritatis dolores consectetur ullam quod expedita tempore.</p>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Reiciendis iure accusantium sed deserunt, nobis accusamus earum ea distinctio culpa explicabo architecto quod aliquam voluptas quam laboriosam est repellat, nihil facere.</p>
+                <p>Ipsa error natus id numquam quisquam praesentium at, suscipit consequuntur repellat aliquid dolor similique a. Saepe animi nisi est voluptas libero id quasi facilis, eveniet veritatis voluptatum eligendi culpa mollitia!</p>
+                <a href="#" class="btn"> Daha Fazla </a>
+            </div>
+        </div>
+    </section>
+    <!-- about end -->
+
+    <!-- contact section start -->
+    <section class="contact" id="iletisim">
+        <div class="row">
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12048.244847532376!2d29.082270000000005!3d40.98014045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cac7b749c9ecdf%3A0x41ebb6401d7dbb82!2zS2FkxLFrw7Z5LCBTYWhyYXnEsSBDZWRpdCwgMzQ3MzQgS2FkxLFrw7Z5L8Swc3RhbmJ1bA!5e0!3m2!1str!2str!4v1673185747204!5m2!1str!2str" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            <form>
+                <h3> Bize Ulaşın </h3>
+
+                <div class="inputBox">
+                    <i class="fas fa-user"></i>
+                    <input type="text" placeholder="İsim">
+                </div>
+
+                <div class="inputBox">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" placeholder="E-Posta">
+                </div>
+
+                <div class="inputBox">
+                    <i class="fas fa-phone"></i>
+                    <input type="number" placeholder="Telefon">
+                </div>
+                <input type="submit" class="btn" value="Şimdi İletişime Geç">
+            </form>
+        </div>
+    </section>
+    <!-- contact section end -->
+
+    <!-- footer section start -->
+    <section class="footer">
+        <div class="search">
+            <input type="text" class="search-input" placeholder="Ara">
+            <button class="btn btn-primary">Search</button>
+        </div>
+
+        <div class="share">
+            <a href="#" class="fab fa-facebook"></a>
+            <a href="#" class="fab fa-twitter"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+            <a href="#" class="fab fa-pinterest"></a>
+        </div>
+
+        <div class="links">
+            <a href="#home" class="active">Ana Sayfa</a>
+            <a href="#about">Hakkımızda</a>
+            <a href="#urun">Kitaplar</a>
+            <a href="#fırsat">Fırsatlar</a>
+            <a href="#iletisim">İletişim</a>
+        </div>
+
+        <div class="credit">
+            <span>Sudenaz Katırcı</span> Tarafından Hazırlandı <span>|</span> Tüm Hakları Saklıdır
+        </div>
+    </section>
+    <!-- footer section end -->
+
+    <script>
+        var alan = document.getElementById("swifty");
+        function degis(){
+            if(alan.style.display=="flex"){
+                alan.style.display="none";
+            }
+            else{
+                alan.style.display="flex";
+            }
+        }
+
+        function visible(){
+        var nav = document.getElementById("navbar2");
+            if(nav.style.display=="flex"){
+                nav.style.display="none";
+             }
+            else{
+                nav.style.display="flex";
+            }
+        }
+    </script>
+</body>
+</html>
