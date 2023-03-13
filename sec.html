@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fontawesome-free-6.3.0-web/css/all.min.css">
+    <title>Document</title>
+</head>
+<body style="height: 100%;">
+    <header class="header">
+        <a href="#" class="logo">
+            <img src="img/logo.png" alt="logo">
+        </a>
+
+        <nav class="navbar active">
+            <a href="#home">Ana Sayfa</a>
+            <a href="#about">Hakkımızda</a>
+            <a href="#urun">Kitaplar</a>
+            <a href="#fırsat">Fırsatlar</a>
+            <a href="#iletisim" class="active">İletişim</a>
+        </nav>
+
+        <div class="buttons">
+            <button onclick="degis()">
+                <i class="fas fa-search"> </i>
+            </button>
+            <button>
+                <i class="fas fa-shopping-cart"> </i>
+            </button>
+            <button id="menu-btn" onclick="visible()">
+                <i class="fas fa-bars"> </i>
+            </button>
+        </div>
+
+        <div class="search-form active" id="swifty">
+            <input type="text" class="search-input" id="search-box" placeholder="Burada Ara">
+            <i class="fas fa-search"></i>
+        </div>
+    </header>
+    
+    <nav id="navbar2">
+        <a href="#home">Ana Sayfa</a>
+        <a href="#about">Hakkımızda</a>
+        <a href="#urun">Kitaplar</a>
+        <a href="#fırsat">Fırsatlar</a>
+        <a href="#iletisim">İletişim</a>
+    </nav>
+    <section class="contact" id="iletisim">
+        <div class="row">
+            <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12048.244847532376!2d29.082270000000005!3d40.98014045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cac7b749c9ecdf%3A0x41ebb6401d7dbb82!2zS2FkxLFrw7Z5LCBTYWhyYXnEsSBDZWRpdCwgMzQ3MzQgS2FkxLFrw7Z5L8Swc3RhbmJ1bA!5e0!3m2!1str!2str!4v1673185747204!5m2!1str!2str" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+            <form>
+                <h3> Bize Ulaşın </h3>
+
+                <div class="inputBox">
+                    <i class="fas fa-user"></i>
+                    <input type="text" placeholder="İsim">
+                </div>
+
+                <div class="inputBox">
+                    <i class="fas fa-envelope"></i>
+                    <input type="email" placeholder="E-Posta">
+                </div>
+
+                <div class="inputBox">
+                    <i class="fas fa-phone"></i>
+                    <input type="number" placeholder="Telefon">
+                </div>
+                <input type="submit" class="btn" value="Şimdi İletişime Geç">
+            </form>
+        </div>
+    </section>
+</body>
+</html>
